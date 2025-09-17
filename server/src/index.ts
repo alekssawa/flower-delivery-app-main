@@ -15,6 +15,7 @@ const nodeEnv = process.env.NODE_ENV || 'development';
 
 // Разрешенные домены для CORS
 const allowedOrigins = [
+  process.env.FRONTEND_URL || '',                     // URL фронтенда на Vercel или другой
   process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : '' // URL самого бэкенда на Vercel
 ].filter(origin => origin && origin.trim() !== '');
 
