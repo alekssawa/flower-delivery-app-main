@@ -7,7 +7,7 @@ import routes from './routes';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 // Безопасное получение URL фронтенда
 // const frontendUrl = process.env.FRONTEND_URL || '';
